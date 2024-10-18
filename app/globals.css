@@ -2,26 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* styles.css or global.css or App.css */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
   }
-}
+  
+  .slick-slide {
+    display: flex; /* Ensures proper display */
+    justify-content: center; /* Center the content */
+  }
+  
+  .slick-list {
+    overflow: hidden; /* Hide the overflow of the slick list */
+  }
+  
+  
